@@ -38,6 +38,9 @@ export default function Navbar() {
               {label}
             </a>
           ))}
+          <a href="/resume.pdf" download="Yatik_Juneja_Resume.pdf" className="topnav-download">
+            ↓ Resume
+          </a>
         </nav>
         <button className="hamburger" onClick={() => setDrawerOpen(o => !o)} aria-label="Menu">
           <span /><span /><span />
@@ -50,6 +53,9 @@ export default function Navbar() {
             {label}
           </a>
         ))}
+        <a href="/resume.pdf" download="Yatik_Juneja_Resume.pdf" onClick={close}>
+          ↓ Resume PDF
+        </a>
       </nav>
     </>
   )
